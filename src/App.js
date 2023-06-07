@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Login from "./Components/Login";
+import Login from "./Pages/Login";
 import { getTokenFromUrl } from "./spotify";
 import SpotifyWebApi from "spotify-web-api-js";
+import Player from "./Pages/Player";
 
 const spotify = new SpotifyWebApi();
 
@@ -28,9 +29,11 @@ function App() {
     console.log('I HAVE A TOKEN >>>"', token);
   }, [])
   // dependency array: empty, will only run once, if there is a variable inside it will run when the ////variable changes as well
+  
+  
   return (
     <div className="App">
-      {token ? <h1> I am logged in </h1> : <Login />}
+      {token ? <Player /> : <Login />}
 
     </div>
   );
