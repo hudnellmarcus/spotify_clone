@@ -9,7 +9,7 @@
 }
 
 .body::-webkit-scrollbar {
-display: none; 
+  display: none;
 }
 
 .body_info {
@@ -32,7 +32,7 @@ display: none;
 .body_info > img {
   height: 20vw;
   margin: 0 20px;
-  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
 
 .body_icons {
@@ -58,6 +58,5 @@ display: none;
 
 .body_songs {
   margin: 20px -30px;
-  /* -30px will go against the padding in the container */ 
-
+  /* -30px will go against the padding in the container */
 }
