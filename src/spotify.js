@@ -3,7 +3,8 @@
 // This link will direct user to Spotify login
 export const authEndpoint = "https://accounts.spotify.com/authorize"; 
 // This link will redirect to homepage once logged in 
-const redirectUri = "http://localhost:3000";
+const devRedirectUri = "http://localhost:3000";
+const redirectUri = "https://hudnellmarcus.github.io/spotify_clone/"
 const clientId = "8b74499ba9074d93a5499d170996ecc8";
 
 const scopes = [
